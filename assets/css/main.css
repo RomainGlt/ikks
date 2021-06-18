@@ -344,4 +344,20 @@ header {
   }
 }
 
+/* - Row 4 / block-enter */
+#block-enter {
+  height: 100vh;
+  margin-left: auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url("../images/20H-KidGirl-Look029-PC7414.jpg");
+  /* background-image: url("../images/20H-KidGirl-Look029-PC7414.jpg"), linear-gradient(#000000, #000000); */
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+
+#block-enter .img-enter {
+  filter: contrast(200%) brightness(200%) opacity(30%);
+}
+
 /* Slide in */
