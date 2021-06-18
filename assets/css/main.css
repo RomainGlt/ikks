@@ -2,6 +2,7 @@
 .row {
   margin: 0 !important;
   padding: 0 !important;
+  height: 100%;
 }
 
 *, ::before, ::after {
@@ -13,7 +14,7 @@
 /* Others customs */
 header {
   position: fixed;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 1500;
@@ -26,6 +27,8 @@ header {
   top: 0;
 }
 
+/* SECTIONS & ROWS  */
+/* - Row 1 / Jumbotron */
 #slider {
   height: 100vh;
 }
@@ -107,6 +110,7 @@ header {
   letter-spacing: 10px;
   text-transform: uppercase;
   text-align: center;
+  color: white;
 }
 
 @media (max-width: 780px) {
@@ -117,7 +121,6 @@ header {
 
 .glitch {
   position: relative;
-  color: white;
   mix-blend-mode: lighten;
 }
 
@@ -255,5 +258,88 @@ header {
     top: -1px;
     left: -1px;
     clip: rect(31px, 9999px, 149px, 0);
+  }
+}
+
+/* - Row 2 / Pictures WG */
+#container-wg {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 780px) {
+  #container-wg {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#block-wg-duo-left {
+  background-image: url("../images/20H-KidGirl-Look029-BlancPC7572.jpg");
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: 50% 35%;
+}
+
+#block-wg-duo-right {
+  background-image: url("../images/20H-KidGirl-Look029-BlancPC7579.jpg");
+  background-repeat: no-repeat;
+  background-size: 220%;
+  background-position: 60% 70%;
+}
+
+#block-wg-solo {
+  background-image: url("../images/20H-KidGirl-Look029-PC7515.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* - Row 3 / Pictures duo animated  */
+#container-duo-animated {
+  display: flex;
+  justify-content: space-between;
+}
+
+#block-duo-1 {
+  height: 80vh;
+  margin-right: auto;
+  background-image: url("../images/20H-KidGirl-Look029-PC7330.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#block-duo-1-desc {
+  min-height: 150px;
+  width: 55%;
+  padding: 5% 0;
+}
+
+#block-duo-1-desc p {
+  color: #FF0055;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+#block-duo-2 {
+  height: 80vh;
+  margin-left: auto;
+  background-image: url("../images/20H-KidGirl-Look029-BlancPC7228.jpg");
+  background-repeat: no-repeat;
+  background-size: 175%;
+  background-position: 30% 52%;
+}
+
+@media (max-width: 780px) {
+  #block-duo-1, #block-duo-2 {
+    height: 40vh;
+  }
+
+  #block-duo-1-desc {
+    width: 100%;
+    font-size: 12px;
   }
 }
