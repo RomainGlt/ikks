@@ -1,0 +1,64 @@
+/* Bootstrap */
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Others customs */
+header {
+  position: fixed;
+  /* display: block; */
+  /* z-index: 1500; */
+  height: 50px;
+  width: 100%;
+}
+
+#wrapper {
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  /* z-index: 900; */
+  background-color: blue;
+}
+
+.slider .slide {
+  display: none;
+}
+
+.slider .slide.slide-active {
+  display: block;
+  animation: fade 0.8s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-1 {
+  height: 100%;
+  background-image: url("../images/20H-KidBoy-Look036-PC8029.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-2 {
+  height: 100%;
+  background-image: url("../images/20H-Kid-Group003-PC8437.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
