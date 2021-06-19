@@ -25,14 +25,29 @@
 <body>
   <header>
     <div class="container-fluid">
-      <div class="row" style="height:100%;">
-        <div id="navbar" class="col-1">
-
-        </div>
-        <div id="logo" class="col-2 p-2 h-100">
-          <div class="col-8">
-            <img class="img-fluid" src="assets/images/logo.png" alt="">
+      <div id="container-header" class="row">
+        <div id="container-burger-nav" class="col-2 order-4 col-lg-1 order-lg-1">
+          <div class="col-12">
+            <div class="burger-nav"></div>
+            <div class="burger-nav"></div>
+            <div class="burger-nav"></div>
           </div>
+        </div>
+        <div id="logo" class="col-4 order-1 col-lg-1 order-lg-2 p-2 h-100">
+          <div class="col-8">
+            <span class="icon-ikks"></span>
+          </div>
+        </div>
+        <div id="container-search" class="col-2 order-2 col-lg-3 order-3">
+          <div class="search-container">
+            <form id="block-search">
+              <input type="text" placeholder="Votre recherche" name="search">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        <div id="container-items" class="col-2 order-3">
+
         </div>
       </div>
     </div>
@@ -56,7 +71,7 @@
             </div>
             <div class="row row-cont-play">
               <div class="col-12 cont-play">
-                <h1 class="glitch is-glitching" data-text=" Play ►">Play ►</h1>
+                <h1 class="glitch is-glitching" data-text=" Play►">Play►</h1>
               </div>
             </div>
           </div>

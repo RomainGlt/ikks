@@ -1,6 +1,35 @@
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  input[type=text],
+  .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  input[type=text] {
+    border: none;
+  }
+}
+
 @media (max-width: 780px) {
+  .row-cont-info {
+    height: 60%;
+  }
+
+  .cont-play {
+    bottom: 20%;
+    top: unset;
+  }
+
   .cont-play h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   #container-wg {
