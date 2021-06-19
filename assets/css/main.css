@@ -11,12 +11,6 @@
   box-sizing: border-box;
 }
 
-/* FOOTER */
-footer {
-  height: 200px;
-  background-color: #FF0055;
-}
-
 /* Others customs */
 header {
   position: fixed;
@@ -26,11 +20,23 @@ header {
   z-index: 1500;
 }
 
+.burger-nav {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
 #wrapper {
   display: block;
   height: 100%;
   width: 100%;
   top: 0;
+}
+
+footer {
+  height: 200px;
+  background-color: #FF0055;
 }
 
 /* SECTIONS & ROWS  */

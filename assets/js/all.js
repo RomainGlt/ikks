@@ -1,51 +1,38 @@
+// Slide in from bottom
 $(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 100) {
-      $("#slider").addClass("slide-scrolled");
-    } else {
-      $("#slider").removeClass("slide-scrolled");
-    }
-  });
+  $(window).width() < 840 && $(".js-slidein").removeClass("js-slidein"), $(".js-slidein").each(function(i) {
+    var s = $(this).offset().top;
+    $(window).scrollTop() + $(window).height() > s && $(this).removeClass("js-slidein")
+  }), $(window).scroll(function() {
+    $(".js-slidein").each(function(i) {
+      var s = $(this).offset().top + $(this).outerHeight() / 3;
+      $(window).scrollTop() + $(window).height() > s && $(this).addClass("js-slidein-visible")
+    })
+  })
 });
 
+// Slide in from left to right
+$(document).ready(function() {
+  $(window).width() < 840 && $(".js-slidein-left").removeClass("js-slidein-left"), $(".js-slidein-left").each(function(i) {
+    var s = $(this).offset().top;
+    $(window).scrollTop() + $(window).height() > s && $(this).removeClass("js-slidein-left")
+  }), $(window).scroll(function() {
+    $(".js-slidein-left").each(function(i) {
+      var s = $(this).offset().top + $(this).outerHeight() / 3;
+      $(window).scrollTop() + $(window).height() > s && $(this).addClass("js-slidein-left-visible")
+    })
+  })
+});
 
-function debounce(func, wait = 20, immediate = true) {
-  var timeout;
-  return function() {
-    var context = this,
-      args = arguments;
-    var later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
-const sliderImages = document.querySelectorAll('.slide-in');
-
-function checkSlide(e) {
-  sliderImages.forEach(sliderImage => {
-    // halfway through the image
-    const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
-    // bottom of the image
-    const imageBottom = sliderImage.offsetTop + sliderImage.height;
-    const isHalfShown = slideInAt > sliderImage.offsetTop;
-    const isNotScrolledPast = window.scrollY < imageBottom;
-    if (isHalfShown && isNotScrolledPast) {
-      sliderImage.classList.add('active');
-    } else {
-      sliderImage.classList.remove('active');
-    }
-
-    console.log(slideInAt);
-  });
-}
-
-window.addEventListener('scroll', debounce(checkSlide));
-
-
-//
+// Slide in from right to left
+$(document).ready(function() {
+  $(window).width() < 840 && $(".js-slidein-right").removeClass("js-slidein-right"), $(".js-slidein-right").each(function(i) {
+    var s = $(this).offset().top;
+    $(window).scrollTop() + $(window).height() > s && $(this).removeClass("js-slidein-right")
+  }), $(window).scroll(function() {
+    $(".js-slidein-right").each(function(i) {
+      var s = $(this).offset().top + $(this).outerHeight() / 3;
+      $(window).scrollTop() + $(window).height() > s && $(this).addClass("js-slidein-right-visible")
+    })
+  })
+});

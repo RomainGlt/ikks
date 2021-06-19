@@ -1,0 +1,38 @@
+/* Slide in from bottom */
+.js-slidein {
+  opacity: 0;
+  transform: translateY(60px);
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.js-slidein-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Slide in from left to right */
+.js-slidein-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.js-slidein-left-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Slide in from right to left */
+.js-slidein-right {
+  opacity: 0;
+  transform: translateX(60px);
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.js-slidein-right-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
