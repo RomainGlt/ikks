@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+/* FOOTER */
+footer {
+  height: 200px;
+  background-color: #FF0055;
+}
+
 /* Others customs */
 header {
   position: fixed;
@@ -111,12 +117,6 @@ header {
   text-transform: uppercase;
   text-align: center;
   color: white;
-}
-
-@media (max-width: 780px) {
-  .cont-play h1 {
-    font-size: 40px;
-  }
 }
 
 .glitch {
@@ -268,14 +268,6 @@ header {
   justify-content: space-between;
 }
 
-@media (max-width: 780px) {
-  #container-wg {
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 #block-wg-duo-left {
   background-image: url("../images/20H-KidGirl-Look029-BlancPC7572.jpg");
   background-repeat: no-repeat;
@@ -333,24 +325,12 @@ header {
   background-position: 30% 52%;
 }
 
-@media (max-width: 780px) {
-  #block-duo-1, #block-duo-2 {
-    height: 40vh;
-  }
-
-  #block-duo-1-desc {
-    width: 100%;
-    font-size: 12px;
-  }
-}
-
 /* - Row 4 / block-enter */
 #block-enter {
   height: 100vh;
   margin-left: auto;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
     url("../images/20H-KidGirl-Look029-PC7414.jpg");
-  /* background-image: url("../images/20H-KidGirl-Look029-PC7414.jpg"), linear-gradient(#000000, #000000); */
   background-repeat: no-repeat;
   background-size: 120%;
   background-position: center;
@@ -360,4 +340,113 @@ header {
   filter: contrast(200%) brightness(200%) opacity(30%);
 }
 
-/* Slide in */
+/* - Row 5 / Pictures RB */
+#container-rb {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#block-rb-duo-left {
+  background-image: url("../images/20H-KidGirl-Look018-PC6520.jpg");
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: 50% 35%;
+}
+
+#block-rb-duo-right {
+  background-image: url("../images/20H-KidGirl-Look018-PC6552.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 77% 70%;
+}
+
+#block-rb-solo {
+  background-color: #000000;
+}
+
+/* - Row 6 / Pictures Duo FS */
+#container-duo-fs {
+  height: 100vh;
+}
+
+#block-duo-fs-1 {
+  background-image: url("../images/20H-KidGirl-Look006-PC5073.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#block-duo-fs-2 {
+  background-image: url("../images/20H-KidGirl-Look017-MG9589.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+/* - Row 7 / Picture alone middle */
+#container-alone-mid {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#block-alone-mid-1 {
+  background-image: url("../images/20H-KidGirl-Look028-MG9924.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+
+#block-alone-mid-2 {
+  display: none;
+  background-image: url("../images/20H-Amy-Look002-PC0206.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+
+/* - Row 8 / Picture middle */
+#container-picture-mid {
+  height: 100vh;
+}
+
+#block-picture-mid {
+  background-image: url("../images/20H-KidGirl-Look033-PC9469.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* - Row 9 / Duo girls */
+#container-duo-girls {
+  height: 80vh;
+}
+
+#block-duo-girls-1 {
+  margin-right: auto;
+  background-image: url("../images/20H-KidGirl-Look014-PC7185.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+
+#block-duo-girls-2 {
+  margin-left: auto;
+  background-image: url("../images/20H-KidGirl-Look013-PC6410.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+
+/* - Row 10 / Duo girl & boy */
+#container-duo-girlboy {
+  height: 100vh;
+}
+
+#block-duo-girlboy {
+  background-image: url("../images/20H-Kid-Group003-PC8437.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

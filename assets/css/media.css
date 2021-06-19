@@ -1,0 +1,59 @@
+@media (max-width: 780px) {
+  .cont-play h1 {
+    font-size: 40px;
+  }
+
+  #container-wg {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #block-duo-1, #block-duo-2 {
+    height: 50vh;
+  }
+
+  #block-duo-1-desc {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  #block-enter {
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+  }
+
+  #container-rb {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #block-alone-mid-2 {
+    display: block;
+    margin-top: 5%;
+  }
+
+  #block-picture-mid {
+    background-image: url("../images/20H-KidGirl-Look033-PC9469.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #container-duo-girls:first-child .col-lg-6 {
+    margin-bottom: 5%;
+  }
+
+  #container-duo-girlboy {
+    height: 40vh;
+  }
+
+  #block-duo-girlboy {
+    background-size: 140%;
+    background-position: 90% 55%;
+  }
+}
